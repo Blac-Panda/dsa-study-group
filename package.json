@@ -1,5 +1,5 @@
 {
-  "name": "dsa",
+  "name": "dsa-study-group",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tayoogunbiyi/dsa-app.git"
+    "url": "git+https://github.com/Blac-Panda/dsa-study-group.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tayoogunbiyi/dsa-app/issues"
+    "url": "https://github.com/Blac-Panda/dsa-study-group/issues"
   },
-  "homepage": "https://github.com/tayoogunbiyi/dsa-app#readme",
+  "homepage": "https://github.com/Blac-Panda/dsa-study-group#readme",
   "dependencies": {
     "parcel": "*",
     "prando": "^5.1.2"
