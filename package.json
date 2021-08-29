@@ -1,0 +1,29 @@
+{
+  "name": "dsa-study-group",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blac-Panda/dsa-study-group.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blac-Panda/dsa-study-group/issues"
+  },
+  "homepage": "https://github.com/Blac-Panda/dsa-study-group#readme",
+  "dependencies": {
+    "parcel": "*",
+    "prando": "^5.1.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
