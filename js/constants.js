@@ -3,10 +3,10 @@ module.exports = {
     SET_1: [
       "Uche",
       "Oluwatunmise",
-      "Empty",
+      "David",
     ],
     SET_2: [
-      "Abdulsammad",
+      "Abdusammad",
       "Benjamin",
       "Oyinlola",
     ],
