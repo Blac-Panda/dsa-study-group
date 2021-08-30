@@ -50,5 +50,5 @@ function deterministicShuffle(arr,rng){
 module.exports = {
     getNearestMonday,
     getNextSunday,
-    deterministicShuffle
+    deterministicShuffle,
 }
