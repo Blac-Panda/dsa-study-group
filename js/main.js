@@ -25,6 +25,7 @@ function getRoundNumber() {
 
 function appendScheduleToDOM(participants1, participants2, questions) {
   let len = questions.length
+  let start = 0
   const type =  len/ 6
   const pairings = [];
   for (let i = 0; i < participants1.length; i += 1) {
@@ -32,22 +33,24 @@ function appendScheduleToDOM(participants1, participants2, questions) {
       const pairing = `<li>
                         <h3>${participants1[i]} - ${participants2[i]} (Group ${i+1})</h3>
                         <p>Group questions for the week:</p>
-                        <a href=${questions[i].link} target="_blank"><p>${questions[i].name}</p></a>
+                        <a href=${questions[start].link} target="_blank"><p>${questions[start].name}</p></a>
                         <a href=${questions[len-1].link} target="_blank"><p>${questions[len-1].name}</p></a>
                       </li>`;
       pairings.push(pairing);
       len--
+      start++
     } else if (type === 2){
       const pairing = `<li>
                         <h3>${participants1[i]} - ${participants2[i]} (Group ${i+1})</h3>
                         <p>Group questions for the week:</p>
-                        <a href=${questions[i].link} target="_blank"><p>${questions[i].name}</p></a>
-                        <a href=${questions[i+1].link} target="_blank"><p>${questions[i+1].name}</p></a>
+                        <a href=${questions[start].link} target="_blank"><p>${questions[start].name}</p></a>
+                        <a href=${questions[start+1].link} target="_blank"><p>${questions[start+1].name}</p></a>
                         <a href=${questions[len-1].link} target="_blank"><p>${questions[len-1].name}</p></a>
                         <a href=${questions[len-2].link} target="_blank"><p>${questions[len-2].name}</p></a>
                       </li>`;
       pairings.push(pairing);
-      len--
+      len -= 2
+      start += 2
     }
   } 
   const element = document.getElementById("app");
